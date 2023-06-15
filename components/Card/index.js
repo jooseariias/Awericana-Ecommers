@@ -10,8 +10,8 @@ const Card = ({
   descuento
 }) => {
   return (
-        <div className='inline-flex flex-col'>
-            <div className='my-3'>
+        <div className=' flex-col shadow-down border-r-4 pt-4 hover:scale-110'>
+            <div className='my-3 '>
                 <Image
                     className='rounded-lg object-contain aspect-video'
                     src={imgSrc}
@@ -21,7 +21,7 @@ const Card = ({
                     loading='lazy'
                 />
             </div>
-            <div className='ml-0'>
+            <div className='ml-6 pb-5 pt-3'>
                 {
                   descuento > 0
                     ? <div className='flex gap-4'>

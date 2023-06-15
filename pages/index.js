@@ -70,8 +70,8 @@ export default function Home ({ publicaciones = [], talles = [] }) {
           <section>
             <Categories />
           </section>
-          <h1 className='text-2xl font-semibold ml-5 mt-10'>Productos destacados</h1>
-          <section className='flex flex-wrap justify-center gap-4'>
+          <h1 className='text-2xl font-semibold ml-5 mt-10 mb-8 underline'>Productos destacados</h1>
+          <section className='flex justify-center flex-wrap gap-6'>
             {publicaciones.length > 0 && publicaciones.map(pub => {
               return (
                 <Link href={'/detail/:id'} as={`/detail/${pub.id}`} key={pub.id}>
